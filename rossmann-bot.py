@@ -111,7 +111,7 @@ def index():
                 return Response('Ok', status=200)
             
         else:
-            send_message(chat_id, 'The store number is wrong')
+            send_message(chat_id, 'This is not a store number, please write a number within the range 1 to 1115')
             return Response('OK', status=200)
     else:
         return Response('OK', status=200)
